@@ -7,7 +7,7 @@ const App = () => {
     fetch(`https://api.api-ninjas.com/v1/quotes?category=humor`, {
       method: 'GET',
       headers: {
-        'X-Api-Key': '5Iam1N4ntlA3shtXNeMWZA==VawubYy4eSXcOggc'
+        'X-Api-Key': import.meta.env.VITE_API_KEY
       }
     })
       .then((response) => response.json())
